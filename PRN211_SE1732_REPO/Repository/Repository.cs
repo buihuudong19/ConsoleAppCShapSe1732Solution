@@ -15,7 +15,13 @@ public class Repository : IRepository
     }
     public void Add(Product product)
     {
-        throw new NotImplementedException();
+        if (isFull())
+        {
+            Product[] temp = new Product[2 * Count()];
+            Array.Copy(_products, 0, temp, 0, _size);
+            _products = temp;
+        }
+        _products[_size++] = product;
     }
 
     public void Delete(Product product)
@@ -30,7 +36,10 @@ public class Repository : IRepository
 
     public void Display()
     {
-        throw new NotImplementedException();
+        foreach (Product product in _products)
+        {
+            Console.WriteLine(product);
+        }
     }
 
     public Product Get(int id)
@@ -38,10 +47,8 @@ public class Repository : IRepository
         throw new NotImplementedException();
     }
 
-    public Product[] GetAll()
-    {
-        throw new NotImplementedException();
-    }
+    public Product[] GetAll() => _products; //expresion bodied
+
 
     public void Update(Product product)
     {
