@@ -24,11 +24,16 @@ public class Program
         repository.Add(p5);
         repository.Add(p6);
 
-        /*
-        Product[] products = repository.GetAll();
-        Console.WriteLine(products.Length);
-        */
+       
         repository.Display();
+
+        Console.WriteLine("=================");
+        repository.Sort();
+        repository.Display();
+
+
+        Console.WriteLine($"Sum of prices in list products: {repository.Sum()}");
+        Console.ReadLine();
 
     }
 
@@ -36,5 +41,23 @@ public class Program
     public static void ShowTop(Product[] products)
     {
         //hien thi top 3 san pham co price lon nhat
+        int rankId = 0, index = 0;
+        if (products != null)
+        {
+            for(index = 0; index < products.Count()-1; index++)
+            {
+                Console.WriteLine(products[index]);
+               
+                if (products[index].Price != products[index+1].Price) {
+                    rankId++;
+                    if (rankId > 2) break;
+
+                }
+
+                
+                
+            }
+        }
+        
     }
 }

@@ -4,25 +4,18 @@ namespace PRN211_SE1732_REPO.Repository;
 
 public class Repository : IRepository
 {
-    private Product[] _products;
-    private int _size;
+    private List<Product> _products;
+  
 
     public Repository()
     {
-        _products = new Product[2];
-        _size = 0;
+        _products = new(); //c# version 9.0
+       
 
     }
     public void Add(Product product)
-    {
-        if (isFull())
-        {
-            Product[] temp = new Product[2 * Count()];
-            Array.Copy(_products, 0, temp, 0, _size);
-            _products = temp;
-        }
-        _products[_size++] = product;
-    }
+        => _products.Add(product); //bodied expression
+
 
     public void Delete(Product product)
     {
@@ -31,7 +24,10 @@ public class Repository : IRepository
 
     public void Delete(int id)
     {
-        throw new NotImplementedException();
+        var p = _products.Find(p => p.Id.Equals(id));
+        if (p != null) 
+            _products.Remove(p);
+   
     }
 
     public void Display()
@@ -41,20 +37,29 @@ public class Repository : IRepository
             Console.WriteLine(product);
         }
     }
+   
+    public Product? Get(int id)
+        => _products
+                .FirstOrDefault(p=> p.Id == id);
 
-    public Product Get(int id)
+    
+
+    public IEnumerable<Product> GetAll() 
+        => _products; //expresion bodied
+
+    public void Sort()
     {
-        throw new NotImplementedException();
+        _products = _products.OrderBy(p => p.Price)
+            .ToList();
     }
 
-    public Product[] GetAll() => _products; //expresion bodied
-
+    public double Sum()
+        => _products.Sum(p => p.Price);
 
     public void Update(Product product)
     {
-        throw new NotImplementedException();
+        int index = _products.IndexOf(product);
+        _products[index]= product;
     }
 
-    public int Count() => _size;
-    public bool isFull() => _size >= _products.Length;
 }
