@@ -244,6 +244,7 @@
             Name = "frmHRMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HR Management Application";
+            Load += frmHRMain_Load;
             ((System.ComponentModel.ISupportInitialize)dgvEmployees).EndInit();
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);

@@ -15,9 +15,7 @@ public class EmpRepository : IEmpRepository
     }
 
     public void Add(Employee e)
-    {
-        throw new NotImplementedException();
-    }
+    => _db.AddEmployee(e);
 
     public void Delete(Employee e)
     {
@@ -30,9 +28,7 @@ public class EmpRepository : IEmpRepository
     }
 
     public IList<Employee> GetAll()
-    {
-        return _db.GetEmployees();
-    }
+            => _db.GetEmployees();//bodied-expression
 
     public void Update(Employee e)
     {
