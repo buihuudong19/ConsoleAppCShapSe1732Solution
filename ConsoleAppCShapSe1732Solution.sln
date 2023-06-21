@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppCShapSe1732", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppOopDemo", "ConsoleAppOopDemo\ConsoleAppOopDemo.csproj", "{8CB93DFD-1EC3-468B-85FC-14581525A21B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRN211_SE1732_REPO", "PRN211_SE1732_REPO\PRN211_SE1732_REPO.csproj", "{693889C1-C9CE-414B-8A02-0E8893AE09ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PRN211_SE1732_REPO", "PRN211_SE1732_REPO\PRN211_SE1732_REPO.csproj", "{693889C1-C9CE-414B-8A02-0E8893AE09ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppProductPRN211", "ConsoleAppProductPRN211\ConsoleAppProductPRN211.csproj", "{F9692AFC-C9B0-4870-921C-FF044DE9204F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppProductPRN211", "ConsoleAppProductPRN211\ConsoleAppProductPRN211.csproj", "{F9692AFC-C9B0-4870-921C-FF044DE9204F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppDemo", "WinFormsAppDemo\WinFormsAppDemo.csproj", "{0A040B04-BD91-4C36-8714-27B16BE008F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F9692AFC-C9B0-4870-921C-FF044DE9204F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9692AFC-C9B0-4870-921C-FF044DE9204F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9692AFC-C9B0-4870-921C-FF044DE9204F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A040B04-BD91-4C36-8714-27B16BE008F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A040B04-BD91-4C36-8714-27B16BE008F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A040B04-BD91-4C36-8714-27B16BE008F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A040B04-BD91-4C36-8714-27B16BE008F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
