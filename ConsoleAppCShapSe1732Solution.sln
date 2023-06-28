@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PRN211_SE1732_REPO", "PRN21
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppProductPRN211", "ConsoleAppProductPRN211\ConsoleAppProductPRN211.csproj", "{F9692AFC-C9B0-4870-921C-FF044DE9204F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppDemo", "WinFormsAppDemo\WinFormsAppDemo.csproj", "{0A040B04-BD91-4C36-8714-27B16BE008F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsAppDemo", "WinFormsAppDemo\WinFormsAppDemo.csproj", "{0A040B04-BD91-4C36-8714-27B16BE008F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppEntityFrameworkCore", "ConsoleAppEntityFrameworkCore\ConsoleAppEntityFrameworkCore.csproj", "{96C44135-AF7C-4A8E-BDF5-78C0B968E06B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0A040B04-BD91-4C36-8714-27B16BE008F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A040B04-BD91-4C36-8714-27B16BE008F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A040B04-BD91-4C36-8714-27B16BE008F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96C44135-AF7C-4A8E-BDF5-78C0B968E06B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96C44135-AF7C-4A8E-BDF5-78C0B968E06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96C44135-AF7C-4A8E-BDF5-78C0B968E06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96C44135-AF7C-4A8E-BDF5-78C0B968E06B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
